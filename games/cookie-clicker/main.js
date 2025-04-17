@@ -7,7 +7,7 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 
-var VERSION=2.022;
+var VERSION=2.052;
 var BETA=0;
 
 
@@ -2142,7 +2142,7 @@ Game.Launch=function()
 						Game.lumpsTotal=spl[43]?parseFloat(spl[43]):-1;
 						Game.lumpT=spl[44]?parseInt(spl[44]):Date.now();
 						Game.lumpRefill=spl[45]?parseInt(spl[45]):0;
-						if (version<2.022) Game.lumpRefill=Game.fps*60;
+						if (version<2.052) Game.lumpRefill=Game.fps*60;
 						Game.lumpCurrentType=spl[46]?parseInt(spl[46]):0;
 						Game.vault=spl[47]?spl[47].split(','):[];
 							for (var i in Game.vault){Game.vault[i]=parseInt(Game.vault[i]);}
